@@ -1,0 +1,47 @@
+* {
+	margin: 100px auto;
+}
+/* main div style */
+.box {
+	width: 200px;
+	height: 300px;
+	background-color: #99ff33;
+	position: relative;
+	transition: .3s linear;
+	text-align: center;
+}
+.box:hover {	/* hover of main div */
+	background-color: red;
+}
+.btn-style {	/* absolute styled divs */
+	position: absolute;
+	width: 80%;
+	height: 30px;
+	background-color: yellow;
+	transition: .3s linear;
+	left: 0;
+	right: 0;
+	opacity: 0;
+}
+.btn-1 {
+	top: -50px;
+	bottom: 0;
+	margin-top: 0;
+}
+.btn-2 {
+	bottom: -50px;
+	margin-bottom: 0;
+}
+.box:hover .btn-style {
+	opacity: 1;
+}
+.box:hover .btn-1 {
+	top: 38%;
+}
+.box:hover .btn-2 {
+	bottom: 38%;
+}
+.btn-1:hover,	/* hover of absolute styled divs */
+.btn-2:hover {	
+	background-color: #99ff33;
+}
